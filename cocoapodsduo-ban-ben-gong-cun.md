@@ -17,43 +17,32 @@
 
 * 安装：
 
-  \* 安装ruby 2.2.2、2.3.3\(已装请忽略\)
+  * 安装ruby 2.2.2、2.3.3\(已装请忽略\)
 
-  ```
-    \* ruby 2.2.2环境下安装cocoapods 0.38.2
+    * ruby 2.2.2环境下安装cocoapods 0.38.2
 
-    \* ruby 2.3.3环境下安装cocoapods 1.0.0
-  ```
+    * ruby 2.3.3环境下安装cocoapods 1.0.0
 
-  \* 安装RVM\(已装请忽略\):
+  * 安装RVM\(已装请忽略\):
 
-  \`\`\`shell
-
-  ```
-    \# 可能需要翻墙    
-
+    ```bash
+    # 可能需要翻墙
     $ curl -L get.rvm.io \| bash -s stable
 
-    \#要想使用 'rvm'命令需要执行下面一行代码
-
+    #要想使用 'rvm'命令需要执行下面一行代码
     $ source ~/.rvm/scripts/rvm
-  ```
+    ```
 
-  \`\`\`
+  * 安装Ruby\(2.2.2\)和CocoaPods\(0.38.2\)
 
-  \* 安装Ruby\(2.2.2\)和CocoaPods\(0.38.2\)
+    ```bash
+      # 列表已安装的ruby版本
+      $ rvm list
+  
+      # 列出可安装的ruby版本
+      $ rvm list known
+    ```
 
-    \`\`\`shell
-
-        \# 列表已安装的ruby版本
-
-        $ rvm list
-
-
-
-        \# 列出可安装的ruby版本
-
-        $ rvm list known
 
 
 
