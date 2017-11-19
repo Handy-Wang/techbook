@@ -36,43 +36,35 @@
   * 安装Ruby\(2.2.2\)和CocoaPods\(0.38.2\)
 
     ```bash
-      # 列表已安装的ruby版本
-      $ rvm list
+    # 列表已安装的ruby版本
+    $ rvm list
+
+    # 列出可安装的ruby版本
+    $ rvm list known
   
-      # 列出可安装的ruby版本
-      $ rvm list known
+    # 安装ruby 2.2.2
+    $ rvm install 2.2.2
+  
+    # 切换ruby版本到2.2.2，确保是使用的刚安装的ruby版本
+    $ rmv use 2.2.2
+
+    # 查看ruby环境信息，确保已切到ruby 2.2.2
+    $ gem environment
+
+    # 安装CocoaPods 0.38.2
+    $ gem install cocoapods -v 0.38.2
+
+    # 查看CocoaPods版本信息，cocoapods版本信息应该显示为0.38.2
+    $ pod --version
+
+
+
+
+
+
     ```
 
 
-
-
-        \# 安装ruby 2.2.2
-
-        $ rvm install 2.2.2
-
-
-
-        \# 切换ruby版本到2.2.2，确保是使用的刚安装的ruby版本
-
-        $ rmv use 2.2.2
-
-
-
-        \# 查看ruby环境信息，确保已切到ruby 2.2.2
-
-        $ gem environment
-
-
-
-        \# 安装CocoaPods 0.38.2
-
-        $ gem install cocoapods -v 0.38.2
-
-
-
-        \# 查看CocoaPods版本信息，cocoapods版本信息应该显示为0.38.2
-
-        $ pod --version
 
 
 
