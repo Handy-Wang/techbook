@@ -35,16 +35,16 @@
 
   * 安装Ruby\(2.2.2\)和CocoaPods\(0.38.2\)
 
-    ```bash
+    ```
     # 列表已安装的ruby版本
     $ rvm list
 
     # 列出可安装的ruby版本
     $ rvm list known
-  
+
     # 安装ruby 2.2.2
     $ rvm install 2.2.2
-  
+
     # 切换ruby版本到2.2.2，确保是使用的刚安装的ruby版本
     $ rmv use 2.2.2
 
@@ -56,98 +56,45 @@
 
     # 查看CocoaPods版本信息，cocoapods版本信息应该显示为0.38.2
     $ pod --version
-
-
-
-
-
-
     ```
 
+  * 安装Ruby\(2.3.3\)和CocoaPods\(1.0.0\)
 
+    ```
+    # 列表已安装的ruby版本
+    $ rvm list
 
+    # 列出可安装的ruby版本
+    $ rvm list known
 
+    # 安装ruby 2.3.3
+    $ rvm install 2.3.3
 
+    # 切换ruby版本到2.3.3，确保是使用的刚安装的ruby版本
+    $ rmv use 2.3.3
 
+    # 查看ruby环境信息，确保已切到ruby 2.3.3
+    $ gem environment
 
-    \`\`\`
+    # 安装CocoaPods 1.0.0
+    $ gem install cocoapods -v 1.0.0
 
+    # 查看CocoaPods版本信息，cocoapods版本信息应该显示为1.0.0
+    $ pod --version
+    ```
 
+  * 切换
+    ```
+    # 使用0.38.2版本CocoaPods
+    $ rvm use 2.2.2
 
-    \* 安装Ruby\(2.3.3\)和CocoaPods\(1.0.0\)
-
-
-
-    \`\`\`shell
-
-        \# 列表已安装的ruby版本
-
-        $ rvm list
-
-
-
-        \# 列出可安装的ruby版本
-
-        $ rvm list known
-
-
-
-        \# 安装ruby 2.3.3
-
-        $ rvm install 2.3.3
-
-
-
-        \# 切换ruby版本到2.3.3，确保是使用的刚安装的ruby版本
-
-        $ rmv use 2.3.3
-
-
-
-        \# 查看ruby环境信息，确保已切到ruby 2.3.3
-
-        $ gem environment
-
-
-
-        \# 安装CocoaPods 1.0.0
-
-        $ gem install cocoapods -v 1.0.0
-
-
-
-        \# 查看CocoaPods版本信息，cocoapods版本信息应该显示为1.0.0
-
-        $ pod --version
-
-
-
-    \`\`\`
-
-
-
-    \* 切换
-
-
-
-    \`\`\`shell
-
-        \# 使用0.38.2版本CocoaPods
-
-        $ rvm use 2.2.2
-
-
-
-        \# 使用1.0.0版本CocoaPods
-
-        $ rvm use 2.3.3
-
-    \`\`\`
+    # 使用1.0.0版本CocoaPods
+    $ rvm use 2.3.3
+    ```
 
 #### 后续
 
 * 欢迎大家提出更优的方案
-
 * 上面的方案有些繁琐，目前能用，后续考虑封装成shell文件
 
 
