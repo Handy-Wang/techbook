@@ -1,26 +1,20 @@
-\# CocoaPods多版本共存及切换
+# CocoaPods多版本共存及切换
 
-\#\# Ruby、RVM、Gem、CocoaPods的关系
+#### Ruby、RVM、Gem、CocoaPods的关系
 
-\* 名词解释
+* 名词解释
+  * **Ruby**，一种开发语言，不细说。
+  * **RVM**，全名Ruby Version Management，安装不同版本的Ruby以及切换某个版本为当前使用版本。
+  * **Gem**，全名RubyGems，用Ruby写的用于管理Ruby第三方库的命令行工具，在命令行里我们习惯叫它gem。它隶属于某个版本的Ruby，即，不同的Ruby版本都各自有对应版本的Gem。
+  * **CocoaPods**，众多Gem第三方库中的一个，具体做什么的就不说了。我们可以使用Gem安装指定版本的CocoaPods: \\*\\*gem install cocoapods -v 0.38.2\\*\\* 或 \\*\\*gem install cocoapods -v 1.0.0\\*\\* 。
 
-```
-\* \*\*Ruby\*\*，一种开发语言。
+* 关系：所以，可以安装多个版本的Ruby，每个版本的Ruby都有一个Gem工具，使用Gem可以安装指定版本的CocoaPods。
 
-\* \*\*RVM\*\*，全名Ruby Version Management，安装不同版本的Ruby以及切换某个版本为当前使用版本。
+#### 安装多个版本的Cocoapds及切换
 
-\* \*\*Gem\*\*，全名RubyGems，用Ruby写的用于管理Ruby第三方库的命令行工具，在命令行里我们习惯叫它gem。它隶属于某个版本的Ruby，即，不同的Ruby版本都各自有对应版本的Gem。
+* 原理概述：通过了解上面的关系，我们可以在不同版本Ruby下，通过Gem安装某一个版本的CocoaPods，然后通过用切换Ruby版本来达到切换不同版本CocoaPods的目的。
 
-\* \*\*CocoaPods\*\*，众多Gem第三方库中的一个，具体做什么的就不说了。我们可以使用Gem安装指定版本的CocoaPods: \*\*gem install cocoapods -v 0.38.2\*\* 或 \*\*gem install cocoapods -v 1.0.0\*\* 。
-```
-
-\* 关系：所以，可以安装多个版本的Ruby，每个版本的Ruby都有一个Gem工具，使用Gem可以安装指定版本的CocoaPods。
-
-\#\# 安装多个版本的Cocoapds及切换
-
-\* 原理概述：通过了解上面的关系，我们可以在不同版本Ruby下，通过Gem安装某一个版本的CocoaPods，然后通过用切换Ruby版本来达到切换不同版本CocoaPods的目的。
-
-\* 安装：
+* 安装：
 
     \* 安装ruby 2.2.2、2.3.3\(已装请忽略\)
 
@@ -168,9 +162,11 @@
 
     \`\`\`
 
-\#\# 后续
+#### 后续
 
-\* 欢迎大家提出更优的方案
+* 欢迎大家提出更优的方案
 
-\* 上面的方案有些繁琐，目前能用，后续考虑封装成shell文件
+* 上面的方案有些繁琐，目前能用，后续考虑封装成shell文件
+
+
 
