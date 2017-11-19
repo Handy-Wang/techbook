@@ -84,12 +84,16 @@
     ```
 
   * 切换
+
     ```
     # 使用0.38.2版本CocoaPods
     $ rvm use 2.2.2
 
     # 使用1.0.0版本CocoaPods
     $ rvm use 2.3.3
+
+    # 如果想默认使用ruby 2.3.3环境
+    $ rvm use 2.3.3 --default
     ```
 
 #### 后续
